@@ -1,0 +1,66 @@
+# Site settings
+title: Vancouver Odia Association
+email: contact@vancouverodia.org
+description: >-
+  Vancouver Odia Association (VOA) is a not-for-profit social and cultural organization 
+  serving the Odia community in the Vancouver metro area.
+baseurl: ""
+url: ""
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Internationalization
+languages:
+  - en
+  - or
+default_language: en
+
+# Social media
+social_links:
+  facebook: "https://www.facebook.com/vancouverodia"
+  instagram: "https://www.instagram.com/vancouverodia"
+  youtube: "https://www.youtube.com/channel/vancouverodia"
+
+# Theme colors
+theme_colors:
+  primary: "#FF7722"   # Orange
+  secondary: "#FFA55A" # Light Orange
+  accent: "#FFD8B5"    # Very Light Orange
+  dark_bg: "#1F1F1F"
+  dark_text: "#F5F5F5"
+  light_bg: "#FFFFFF"
+  light_text: "#333333"
+
+# Collections
+collections:
+  events:
+    output: true
+  galleries:
+    output: true
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "events"
+    values:
+      layout: "event"
+  - scope:
+      path: ""
+      type: "galleries"
+    values:
+      layout: "gallery"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"

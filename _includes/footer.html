@@ -1,0 +1,55 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="{{ site.title }}" class="logo-img">
+        <p data-i18n="footer.tagline">Celebrating Odia Culture in Vancouver</p>
+      </div>
+      
+      <div class="footer-links">
+        <div class="footer-nav">
+          <h3 data-i18n="footer.quicklinks">Quick Links</h3>
+          <ul>
+            <li><a href="{{ '/' | relative_url }}"><span data-i18n="nav.home">Home</span></a></li>
+            <li><a href="{{ '/about' | relative_url }}"><span data-i18n="nav.about">About</span></a></li>
+            <li><a href="{{ '/events' | relative_url }}"><span data-i18n="nav.events">Events</span></a></li>
+            <li><a href="{{ '/gallery' | relative_url }}"><span data-i18n="nav.gallery">Gallery</span></a></li>
+            <li><a href="{{ '/contact' | relative_url }}"><span data-i18n="nav.contact">Contact</span></a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h3 data-i18n="footer.contact">Contact Us</h3>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+        </div>
+      </div>
+      
+      <div class="social-links">
+        <h3 data-i18n="footer.followus">Follow Us</h3>
+        <div class="social-icons">
+          {% if site.social_links.facebook %}
+          <a href="{{ site.social_links.facebook }}" target="_blank" rel="noopener" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          {% endif %}
+          
+          {% if site.social_links.instagram %}
+          <a href="{{ site.social_links.instagram }}" target="_blank" rel="noopener" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          {% endif %}
+          
+          {% if site.social_links.youtube %}
+          <a href="{{ site.social_links.youtube }}" target="_blank" rel="noopener" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    
+    <div class="copyright">
+      <p>© {{ site.time | date: '%Y' }} {{ site.title }}. <span data-i18n="footer.rights">All rights reserved.</span></p>
+    </div>
+  </div>
+</footer>

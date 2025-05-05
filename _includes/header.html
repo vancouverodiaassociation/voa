@@ -1,0 +1,61 @@
+<header class="site-header">
+  <div class="container">
+    <div class="header-content">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="{{ '/' | relative_url }}">
+          <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="{{ site.title }}" class="logo-img">
+        </a>
+      </div>
+      
+      <!-- Navigation -->
+      <nav class="main-nav">
+        <ul>
+          <li><a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}">
+            <span data-i18n="nav.home">Home</span>
+          </a></li>
+          <li><a href="{{ '/about' | relative_url }}" class="nav-link {% if page.url contains '/about' %}active{% endif %}">
+            <span data-i18n="nav.about">About</span>
+          </a></li>
+          <li><a href="{{ '/events' | relative_url }}" class="nav-link {% if page.url contains '/events' %}active{% endif %}">
+            <span data-i18n="nav.events">Events</span>
+          </a></li>
+          <li><a href="{{ '/gallery' | relative_url }}" class="nav-link {% if page.url contains '/gallery' %}active{% endif %}">
+            <span data-i18n="nav.gallery">Gallery</span>
+          </a></li>
+          <li><a href="{{ '/contact' | relative_url }}" class="nav-link {% if page.url contains '/contact' %}active{% endif %}">
+            <span data-i18n="nav.contact">Contact</span>
+          </a></li>
+        </ul>
+      </nav>
+      
+      <!-- Mobile menu toggle -->
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <!-- Theme & Language Controls -->
+      <div class="controls">
+        <!-- Theme Switcher -->
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+          <i class="fas fa-sun"></i>
+          <i class="fas fa-moon"></i>
+        </button>
+        
+        <!-- Language Switcher -->
+        <div class="language-switcher">
+          <button id="language-toggle" class="language-toggle">
+            <span class="current-language">EN</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="language-dropdown">
+            <a href="#" data-lang="en" class="language-option {% if page.lang == 'en' %}active{% endif %}">English</a>
+            <a href="#" data-lang="or" class="language-option {% if page.lang == 'or' %}active{% endif %}">ଓଡ଼ିଆ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

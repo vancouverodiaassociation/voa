@@ -1,0 +1,94 @@
+// Responsive mixins
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == sm {
+    @media (min-width: $breakpoint-sm) { @content; }
+  }
+  @else if $breakpoint == md {
+    @media (min-width: $breakpoint-md) { @content; }
+  }
+  @else if $breakpoint == lg {
+    @media (min-width: $breakpoint-lg) { @content; }
+  }
+  @else if $breakpoint == xl {
+    @media (min-width: $breakpoint-xl) { @content; }
+  }
+}
+
+// Flexbox mixins
+@mixin flex($direction: row, $justify: flex-start, $align: stretch, $wrap: nowrap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+}
+
+// Typography mixins
+@mixin heading($size) {
+  font-family: $font-family-sans;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+  
+  @if $size == h1 {
+    font-size: 2rem;
+    @include respond-to(md) {
+      font-size: 2.5rem;
+    }
+  }
+  @else if $size == h2 {
+    font-size: 1.75rem;
+    @include respond-to(md) {
+      font-size: 2rem;
+    }
+  }
+  @else if $size == h3 {
+    font-size: 1.5rem;
+    @include respond-to(md) {
+      font-size: 1.75rem;
+    }
+  }
+  @else if $size == h4 {
+    font-size: 1.25rem;
+    @include respond-to(md) {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+// Button mixins
+@mixin button($bg-color, $text-color, $hover-bg-color) {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: $bg-color;
+  color: $text-color;
+  border: none;
+  border-radius: $border-radius;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color $transition-speed ease, transform $transition-speed ease;
+  
+  &:hover, &:focus {
+    background-color: $hover-bg-color;
+    transform: translateY(-2px);
+  }
+  
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+// Card mixins
+@mixin card {
+  border-radius: $border-radius;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform $transition-speed ease, box-shadow $transition-speed ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+}

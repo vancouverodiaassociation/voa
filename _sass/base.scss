@@ -1,0 +1,87 @@
+// Base styles
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: $font-size-base;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-family-sans;
+  line-height: $line-height-base;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color $transition-speed ease, color $transition-speed ease;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.theme-light {
+  --bg-color: #{$light-bg};
+  --text-color: #{$light-text};
+  --border-color: #{$light-border};
+  --card-bg: #{$light-card-bg};
+}
+
+.theme-dark {
+  --bg-color: #{$dark-bg};
+  --text-color: #{$dark-text};
+  --border-color: #{$dark-border};
+  --card-bg: #{$dark-card-bg};
+}
+
+// Typography
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-sans;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+h1 { @include heading(h1); }
+h2 { @include heading(h2); }
+h3 { @include heading(h3); }
+h4 { @include heading(h4); }
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+  transition: color $transition-speed ease;
+  
+  &:hover {
+    color: adjust-color($primary-color, $lightness: -10%);
+  }
+}
+
+ul, ol {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 $container-padding;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem 0;
+}

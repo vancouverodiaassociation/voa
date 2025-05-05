@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Raja Celebration",
+    "start": "2025-05-15",
+    "url": "/events/raja-celebration",
+    "classNames": ["event-important"]
+  },
+  {
+    "title": "Rath Yatra Festival",
+    "start": "2025-06-20",
+    "url": "/events/rath-yatra-festival",
+    "classNames": ["event-important"]
+  },
+  {
+    "title": "Cultural Workshop",
+    "start": "2025-07-10",
+    "url": "/events/cultural-workshop",
+    "classNames": ["event-regular"]
+  }
+]

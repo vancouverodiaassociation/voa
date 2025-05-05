@@ -1,0 +1,17 @@
+---
+layout: null
+---
+
+@import 'variables';
+@import 'mixins';
+@import 'base';
+@import 'components';
+@import 'pages';
+
+// Import FullCalendar styles
+@import 'https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css';
+
+// Import lightbox for gallery
+@import 'https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lightgallery.min.css';
+@import 'https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lg-zoom.min.css';
+@import 'https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lg-thumbnail.min.css';
