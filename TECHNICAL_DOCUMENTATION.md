@@ -1,10 +1,10 @@
-# Vancouver Odia Association Website - Technical Documentation
+# Vancouver Odia Cultural Association Website - Technical Documentation
 
-This document provides a comprehensive technical overview of the Vancouver Odia Association (VOA) website architecture, folder structure, and implementation details to aid in debugging and maintenance.
+This document provides a comprehensive technical overview of the Vancouver Odia Cultural Association (VOCA) website architecture, folder structure, and implementation details to aid in debugging and maintenance.
 
 ## Project Overview
 
-The VOA website is a static website with the following key features:
+The VOCA website is a static website with the following key features:
 - Internationalization support (English and Odia)
 - Dark/Light theme toggle
 - Responsive design
@@ -25,7 +25,7 @@ The project uses Jekyll for templating and static site generation, which provide
 ## Folder Structure
 
 ```
-/Users/braja.bihari/code/misc/VOA/
+/Users/braja.bihari/code/misc/VOCA/
 ├── _config.yml                # Jekyll configuration file
 ├── _events/                   # Event collection (Jekyll)
 ├── _galleries/                # Galleries collection (Jekyll)
@@ -80,7 +80,7 @@ The website implements client-side internationalization using JavaScript and JSO
 
 **Example HTML Usage:**
 ```html
-<h1 data-i18n="home.banner.title">Vancouver Odia Association</h1>
+<h1 data-i18n="home.banner.title">Vancouver Odia Cultural Association</h1>
 ```
 
 **Example JSON Structure:**
@@ -88,7 +88,7 @@ The website implements client-side internationalization using JavaScript and JSO
 {
   "home": {
     "banner": {
-      "title": "Vancouver Odia Association"
+      "title": "Vancouver Odia Cultural Association"
     }
   }
 }

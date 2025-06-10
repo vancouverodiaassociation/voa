@@ -1,6 +1,6 @@
-# Vancouver Odia Association (VOA) Website
+# Vancouver Odia Cultural Association (VOCA) Website
 
-This repository contains the source code for the Vancouver Odia Association website, a not-for-profit social and cultural organization based in Vancouver, Canada.
+This repository contains the source code for the Vancouver Odia Cultural Association website, a not-for-profit social and cultural organization based in Vancouver, Canada.
 
 ## Features
 
