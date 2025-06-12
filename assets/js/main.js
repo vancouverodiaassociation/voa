@@ -56,7 +56,8 @@ document.addEventListener('DOMContentLoaded', function() {
         selector: '.gallery-item',
         plugins: [lgZoom, lgThumbnail],
         speed: 500,
-        download: false
+        download: false,
+        adaptiveHeight: true
       });
     }
   });

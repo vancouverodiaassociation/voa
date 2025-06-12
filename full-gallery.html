@@ -1,0 +1,38 @@
+---
+layout: default
+title: Photo Gallery
+permalink: /gallery/ # This makes the URL yoursite.com/gallery/
+---
+
+<div class="container page-content full-gallery-page">
+  <div class="section-header">
+    <h1>Photo Gallery</h1>
+    <p>Browse through photos from our events and gatherings.</p>
+  </div>
+
+  {% if site.data.gdrive_gallery and site.data.gdrive_gallery.size > 0 %}
+    {% for album in site.data.gdrive_gallery %}
+      <section class="album-section" id="{{ album.album_id | slugify }}">
+        <h2>{{ album.album_title | escape }}</h2>
+        <div class="gallery-grid">
+          {% for photo in album.photos %}
+            <a href="{{ photo.url }}" class="gallery-item" data-lightbox="{{ album.album_id }}" data-title="{{ photo.alt | escape }}">
+              <img src="{{ photo.thumbnail_url }}" alt="{{ photo.alt | escape }}" loading="lazy">
+              <span class="gallery-item-overlay"><i class="fas fa-search-plus"></i></span>
+            </a>
+          {% endfor %}
+        </div>
+      </section>
+      {% unless forloop.last %}
+        <hr class="album-separator">
+      {% endunless %}
+    {% endfor %}
+  {% else %}
+    <p class="text-center" style="margin-top: 40px; font-style: italic;">
+      The photo gallery is currently being updated or is not yet configured. Please check back later.
+    </p>
+    <p class="text-center" style="font-size: 0.9em; margin-top:10px;">
+      <em>(Site administrators: Please ensure the <code>_data/gdrive_gallery.yml</code> file is correctly populated with image data from Google Drive.)</em>
+    </p>
+  {% endif %}
+</div>

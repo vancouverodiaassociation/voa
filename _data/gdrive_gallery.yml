@@ -1,0 +1,39 @@
+# _data/gdrive_gallery.yml
+#
+# Instructions for populating this file:
+# 1. This file defines the albums and photos for your full gallery page.
+# 2. You need to replace the placeholder data below with information from your Google Drive.
+# 3. For each sub-directory in your shared Google Drive folder, create an "album" entry.
+# 4. For each photo, you'll need:
+#    - A direct URL to the full-size image (for lightbox).
+#      Example for Google Drive: https://drive.google.com/uc?export=view&id=YOUR_FILE_ID
+#    - A URL to a thumbnail image (for the gallery grid).
+#      Example for Google Drive: https://drive.google.com/thumbnail?id=YOUR_FILE_ID&sz=w400 (w400 suggests a 400px width, adjust as needed for "large thumbnails")
+#
+# Fields:
+# - album_title: (String) The name of the sub-directory/album.
+#   album_id: (String) A unique ID for this album (e.g., "raja-celebrations-2024"). Used for LightGallery grouping.
+#   photos: (Array) A list of photos in this album.
+#     - url: (String) Direct link to the full-resolution image.
+#       thumbnail_url: (String) Link to the thumbnail image.
+#       alt: (String) Alternative text for the image (used for accessibility and as a caption in the lightbox).
+
+- album_title: "Placeholder Album 1: Event Name"
+  album_id: "event-placeholder-1"
+  photos:
+    - url: "https://via.placeholder.com/1200x800.png/007bff/fff?text=Full+Image+1A"
+      thumbnail_url: "https://via.placeholder.com/400x267.png/007bff/fff?text=Thumbnail+1A"
+      alt: "Description of Photo 1A"
+    - url: "https://via.placeholder.com/1200x800.png/28a745/fff?text=Full+Image+1B"
+      thumbnail_url: "https://via.placeholder.com/400x267.png/28a745/fff?text=Thumbnail+1B"
+      alt: "Description of Photo 1B"
+
+- album_title: "Placeholder Album 2: Another Event"
+  album_id: "event-placeholder-2"
+  photos:
+    - url: "https://via.placeholder.com/1200x800.png/dc3545/fff?text=Full+Image+2A"
+      thumbnail_url: "https://via.placeholder.com/400x267.png/dc3545/fff?text=Thumbnail+2A"
+      alt: "Description of Photo 2A"
+    - url: "https://via.placeholder.com/1200x800.png/ffc107/000?text=Full+Image+2B"
+      thumbnail_url: "https://via.placeholder.com/400x267.png/ffc107/000?text=Thumbnail+2B"
+      alt: "Description of Photo 2B"

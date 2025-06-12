@@ -7,6 +7,8 @@ layout: null
 @import 'base';
 @import 'components';
 @import 'pages';
+@import 'gallery';
+@import 'full-gallery';
 
 // Import FullCalendar styles
 @import 'https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css';
