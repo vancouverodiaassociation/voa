@@ -382,6 +382,80 @@
   }
 }
 
+// Modal Styles
+.modal {
+  display: none; // Hidden by default
+  position: fixed; // Stay in place
+  z-index: 1000; // Sit on top
+  left: 0;
+  top: 0;
+  width: 100%; // Full width
+  height: 100%; // Full height
+  overflow: auto; // Enable scroll if needed
+  background-color: rgba(0,0,0,0.6); // Black w/ opacity
+
+  .modal-content {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    margin: 10% auto; // 10% from the top and centered
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+    border-radius: $border-radius;
+    width: 80%; // Could be more or less, depending on screen size
+    max-width: 600px; // Maximum width
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    animation: fadeInModal 0.3s ease-out;
+  }
+
+  .modal-close-btn {
+    color: var(--text-color-muted);
+    float: right;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1;
+
+    &:hover,
+    &:focus {
+      color: $primary-color;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+
+  .modal-body {
+    padding-top: 1rem;
+    img.modal-event-image {
+      width: 100%;
+      max-height: 250px;
+      object-fit: cover;
+      border-radius: $border-radius; // Use defined variable
+      margin-bottom: 1rem;
+    }
+    h2 {
+      margin-top: 0;
+      color: $primary-color;
+    }
+    p {
+      margin-bottom: 0.75rem;
+      line-height: 1.6;
+    }
+    #modal-event-location {
+      font-style: italic;
+      opacity: 0.9;
+    }
+  }
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+@keyframes fadeInModal {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 // Banner styles
 .banner {
   position: relative;

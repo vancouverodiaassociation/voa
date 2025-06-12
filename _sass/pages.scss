@@ -31,7 +31,7 @@
   .events-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 2.5rem; /* Increased gap for more spacing */
     
     @include respond-to(md) {
       grid-template-columns: repeat(2, 1fr);
@@ -96,6 +96,7 @@
       margin-bottom: 1.5rem;
       display: -webkit-box;
       -webkit-line-clamp: 3;
+      line-clamp: 3; /* Added standard property for compatibility */
       -webkit-box-orient: vertical;
       overflow: hidden;
       font-size: 0.875rem;

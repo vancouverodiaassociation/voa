@@ -1,0 +1,63 @@
+---
+layout: default
+title: Events
+lang: en
+---
+
+<section class="page-section featured-events">
+  <div class="container">
+    <div class="section-header">
+      <h1 data-i18n="events.title">Upcoming Events</h1>
+    </div>
+    <div class="events-grid">
+      <!-- Sample Event Cards - Would be generated dynamically from _data -->
+      <div class="event-card">
+        <div class="event-image">
+          <img src="{{ '/assets/images/events/event1.jpg' | relative_url }}" alt="Event Image">
+        </div>
+        <div class="event-content">
+          <div class="event-date">Sunday, June 15, 2025</div>
+          <h3 class="event-title">Raja Celebration</h3>
+          <div class="event-location">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Stanley Park, Vancouver</span>
+          </div>
+          <p class="event-description">Join us for a celebration of the traditional Odia festival of Raja with music, dance, and authentic Odia cuisine.</p>
+          <a href="{{ '/events/raja-celebration' | relative_url }}" class="btn">Details</a>
+        </div>
+      </div>
+      
+      <div class="event-card">
+        <div class="event-image">
+          <img src="{{ '/assets/images/events/event2.jpg' | relative_url }}" alt="Event Image">
+        </div>
+        <div class="event-content">
+          <div class="event-date">Sunday, June 29, 2025</div>
+          <h3 class="event-title">Rath Yatra Festival</h3>
+          <div class="event-location">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Laxmi Narayan Mandir, Surrey</span>
+          </div>
+          <p class="event-description">Experience the grand celebration of Rath Yatra, featuring a chariot procession, cultural performances, and community gathering.</p>
+          <a href="{{ '/events/rath-yatra-festival' | relative_url }}" class="btn">Details</a>
+        </div>
+      </div>
+      
+      <div class="event-card">
+        <div class="event-image">
+          <img src="{{ '/assets/images/events/event3.jpg' | relative_url }}" alt="Event Image">
+        </div>
+        <div class="event-content">
+          <div class="event-date">Sunday, July 10, 2025</div>
+          <h3 class="event-title">Cultural Workshop</h3>
+          <div class="event-location">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Burnaby Public Library</span>
+          </div>
+          <p class="event-description">Learn about Odisha's rich cultural heritage, including traditional arts, crafts, and language in this interactive workshop.</p>
+          <a href="{{ '/events/cultural-workshop' | relative_url }}" class="btn">Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

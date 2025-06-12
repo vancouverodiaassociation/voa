@@ -42,5 +42,19 @@
   <script src="{{ '/assets/js/theme-switcher.js' | relative_url }}"></script>
   <script src="{{ '/assets/js/language-switcher.js' | relative_url }}"></script>
   <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+
+  <!-- Event Details Modal -->
+  <div id="event-details-modal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close-btn">&times;</span>
+      <div class="modal-body">
+        <img src="" alt="Event Image" class="modal-event-image" style="display:none;">
+        <h2 id="modal-event-title"></h2>
+        <p id="modal-event-date"></p>
+        <p id="modal-event-location"></p>
+        <p id="modal-event-description"></p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
