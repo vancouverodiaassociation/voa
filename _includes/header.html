@@ -58,4 +58,27 @@
       </div>
     </div>
   </div>
+
+  <!-- Mobile Menu Structure -->
+  <div class="mobile-menu">
+    <nav>
+      <ul>
+        <li><a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}">
+          <span data-i18n="nav.home">Home</span>
+        </a></li>
+        <li><a href="{{ '/about' | relative_url }}" class="nav-link {% if page.url contains '/about' %}active{% endif %}">
+          <span data-i18n="nav.about">About</span>
+        </a></li>
+        <li><a href="{{ '/events' | relative_url }}" class="nav-link {% if page.url contains '/events' %}active{% endif %}">
+          <span data-i18n="nav.events">Events</span>
+        </a></li>
+        <li><a href="{{ '/gallery' | relative_url }}" class="nav-link {% if page.url contains '/gallery' %}active{% endif %}">
+          <span data-i18n="nav.gallery">Gallery</span>
+        </a></li>
+        <li><a href="{{ '/contact' | relative_url }}" class="nav-link {% if page.url contains '/contact' %}active{% endif %}">
+          <span data-i18n="nav.contact">Contact</span>
+        </a></li>
+      </ul>
+    </nav>
+  </div>
 </header>

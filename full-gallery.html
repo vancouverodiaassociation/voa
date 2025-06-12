@@ -6,8 +6,9 @@ permalink: /gallery/ # This makes the URL yoursite.com/gallery/
 
 <div class="container page-content full-gallery-page">
   <div class="section-header">
-    <h1>Photo Gallery</h1>
-    <p>Browse through photos from our events and gatherings.</p>
+    <br>
+    <h1 data-i18n="galleryPage.title">Photo Gallery</h1>
+    <p data-i18n="galleryPage.subtitle">Browse through photos from our events and gatherings.</p>
   </div>
 
   {% if site.data.gdrive_gallery and site.data.gdrive_gallery.size > 0 %}
@@ -28,11 +29,11 @@ permalink: /gallery/ # This makes the URL yoursite.com/gallery/
       {% endunless %}
     {% endfor %}
   {% else %}
-    <p class="text-center" style="margin-top: 40px; font-style: italic;">
+    <p class="text-center" style="margin-top: 40px; font-style: italic;" data-i18n="galleryPage.empty.message">
       The photo gallery is currently being updated or is not yet configured. Please check back later.
     </p>
     <p class="text-center" style="font-size: 0.9em; margin-top:10px;">
-      <em>(Site administrators: Please ensure the <code>_data/gdrive_gallery.yml</code> file is correctly populated with image data from Google Drive.)</em>
+      <em data-i18n="galleryPage.empty.adminNote">(Site administrators: Please ensure the <code>_data/gdrive_gallery.yml</code> file is correctly populated with image data from Google Drive.)</em>
     </p>
   {% endif %}
 </div>

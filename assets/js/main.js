@@ -18,7 +18,11 @@ document.addEventListener('DOMContentLoaded', function() {
     bannerImages.forEach(img => {
       const container = img.parentElement;
       if (container) {
-        container.style.height = `${container.offsetWidth * 0.4}px`;
+        let aspectRatio = 0.4; // Default for larger screens
+        if (window.innerWidth < 768) { // Check for small screens
+          aspectRatio = 0.7; // Use a larger aspect ratio for smaller screens
+        }
+        container.style.height = `${Math.round(container.offsetWidth * aspectRatio)}px`; // Use Math.round for whole pixels
       }
     });
   }

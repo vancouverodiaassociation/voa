@@ -34,6 +34,74 @@
     "gallery": {
       "title": "Photo Gallery",
       "viewall": "View Full Gallery"
+    },
+    "sampleEvents": {
+      "event1": {
+        "date": "Sunday, June 15, 2025",
+        "title": "Raja Celebration",
+        "location": "Stanley Park, Vancouver",
+        "description": "Join us for a celebration of the traditional Odia festival of Raja with music, dance, and authentic Odia cuisine.",
+        "imageAlt": "Raja Celebration Event Image"
+      },
+      "event2": {
+        "date": "Sunday, June 29, 2025",
+        "title": "Rath Yatra Festival",
+        "location": "Laxmi Narayan Mandir, Surrey",
+        "description": "Experience the grand celebration of Rath Yatra, featuring a chariot procession, cultural performances, and community gathering.",
+        "imageAlt": "Rath Yatra Festival Event Image"
+      },
+      "event3": {
+        "date": "Sunday, July 10, 2025",
+        "title": "Cultural Workshop",
+        "location": "Burnaby Public Library",
+        "description": "Learn about Odisha's rich cultural heritage, including traditional arts, crafts, and language in this interactive workshop.",
+        "imageAlt": "Cultural Workshop Event Image"
+      }
+    },
+    "sampleGallery": {
+      "image1": {"title": "Gallery Image 1"},
+      "image2": {"title": "Gallery Image 2"},
+      "image3": {"title": "Gallery Image 3"},
+      "image4": {"title": "Gallery Image 4"},
+      "image5": {"title": "Gallery Image 5"},
+      "image6": {"title": "Gallery Image 6"},
+      "image7": {"title": "Gallery Image 7"},
+      "image8": {"title": "Gallery Image 8"}
+    }
+  },
+  "common": {
+    "detailsButton": "Details"
+  },
+  "about": {
+    "pageTitle": "About Vancouver Odia Cultural Association",
+    "team": {
+      "title": "Our Team",
+      "member1": {
+        "alt": "Priya Patel",
+        "name": "Priya Patel",
+        "role": "President",
+        "bio": "A passionate advocate for Odia culture with over 10 years of community organizing experience."
+      },
+      "member2": {
+        "alt": "Raj Mohanty",
+        "name": "Raj Mohanty",
+        "role": "Vice President",
+        "bio": "Committed to fostering connections between the Odia diaspora and promoting cultural exchange."
+      },
+      "member3": {
+        "alt": "Leena Das",
+        "name": "Leena Das",
+        "role": "Cultural Secretary",
+        "bio": "An accomplished Odissi dancer dedicated to preserving traditional Odia arts."
+      }
+    }
+  },
+  "galleryPage": {
+    "title": "Photo Gallery",
+    "subtitle": "Browse through photos from our events and gatherings.",
+    "empty": {
+      "message": "The photo gallery is currently being updated or is not yet configured. Please check back later.",
+      "adminNote": "(Site administrators: Please ensure the `_data/gdrive_gallery.yml` file is correctly populated with image data from Google Drive.)"
     }
   }
 }

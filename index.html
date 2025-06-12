@@ -11,7 +11,7 @@ lang: en
     <div class="banner-content">
       <h1 data-i18n="home.banner.title">Welcome to Vancouver Odia Cultural Association</h1>
       <p data-i18n="home.banner.subtitle">Celebrating Odia Culture in Vancouver</p>
-      <a href="{{ '/events' | relative_url }}" class="btn" data-i18n="home.banner.button">Upcoming Events</a>
+      <!-- <a href="{{ '/events' | relative_url }}" class="btn" data-i18n="home.banner.button">Upcoming Events</a> -->
     </div>
   </div>
 
@@ -31,14 +31,14 @@ lang: en
           <img src="{{ '/assets/images/events/event1.jpg' | relative_url }}" alt="Event Image">
         </div>
         <div class="event-content">
-          <div class="event-date">Sunday, June 15, 2025</div>
-          <h3 class="event-title">Raja Celebration</h3>
+          <div class="event-date" data-i18n="home.sampleEvents.event1.date">Sunday, June 15, 2025</div>
+          <h3 class="event-title" data-i18n="home.sampleEvents.event1.title">Raja Celebration</h3>
           <div class="event-location">
             <i class="fas fa-map-marker-alt"></i>
-            <span>Stanley Park, Vancouver</span>
+            <span data-i18n="home.sampleEvents.event1.location">Stanley Park, Vancouver</span>
           </div>
-          <p class="event-description">Join us for a celebration of the traditional Odia festival of Raja with music, dance, and authentic Odia cuisine.</p>
-          <a href="{{ '/events/raja-celebration' | relative_url }}" class="btn">Details</a>
+          <p class="event-description" data-i18n="home.sampleEvents.event1.description">Join us for a celebration of the traditional Odia festival of Raja with music, dance, and authentic Odia cuisine.</p>
+          <a href="{{ '/events/raja-celebration' | relative_url }}" class="btn" data-i18n="common.detailsButton">Details</a>
         </div>
       </div>
       
@@ -47,14 +47,14 @@ lang: en
           <img src="{{ '/assets/images/events/event2.jpg' | relative_url }}" alt="Event Image">
         </div>
         <div class="event-content">
-          <div class="event-date">Sunday, June 29, 2025</div>
-          <h3 class="event-title">Rath Yatra Festival</h3>
+          <div class="event-date" data-i18n="home.sampleEvents.event2.date">Sunday, June 29, 2025</div>
+          <h3 class="event-title" data-i18n="home.sampleEvents.event2.title">Rath Yatra Festival</h3>
           <div class="event-location">
             <i class="fas fa-map-marker-alt"></i>
-            <span>Laxmi Narayan Mandir, Surrey</span>
+            <span data-i18n="home.sampleEvents.event2.location">Laxmi Narayan Mandir, Surrey</span>
           </div>
-          <p class="event-description">Experience the grand celebration of Rath Yatra, featuring a chariot procession, cultural performances, and community gathering.</p>
-          <a href="{{ '/events/rath-yatra-festival' | relative_url }}" class="btn">Details</a>
+          <p class="event-description" data-i18n="home.sampleEvents.event2.description">Experience the grand celebration of Rath Yatra, featuring a chariot procession, cultural performances, and community gathering.</p>
+          <a href="{{ '/events/rath-yatra-festival' | relative_url }}" class="btn" data-i18n="common.detailsButton">Details</a>
         </div>
       </div>
       
@@ -63,14 +63,14 @@ lang: en
           <img src="{{ '/assets/images/events/event3.jpg' | relative_url }}" alt="Event Image">
         </div>
         <div class="event-content">
-          <div class="event-date">Sunday, July 10, 2025</div>
-          <h3 class="event-title">Cultural Workshop</h3>
+          <div class="event-date" data-i18n="home.sampleEvents.event3.date">Sunday, July 10, 2025</div>
+          <h3 class="event-title" data-i18n="home.sampleEvents.event3.title">Cultural Workshop</h3>
           <div class="event-location">
             <i class="fas fa-map-marker-alt"></i>
-            <span>Burnaby Public Library</span>
+            <span data-i18n="home.sampleEvents.event3.location">Burnaby Public Library</span>
           </div>
-          <p class="event-description">Learn about Odisha's rich cultural heritage, including traditional arts, crafts, and language in this interactive workshop.</p>
-          <a href="{{ '/events/cultural-workshop' | relative_url }}" class="btn">Details</a>
+          <p class="event-description" data-i18n="home.sampleEvents.event3.description">Learn about Odisha's rich cultural heritage, including traditional arts, crafts, and language in this interactive workshop.</p>
+          <a href="{{ '/events/cultural-workshop' | relative_url }}" class="btn" data-i18n="common.detailsButton">Details</a>
         </div>
       </div>
     </div>
@@ -130,36 +130,36 @@ lang: en
     
     <div class="gallery-grid">
       <!-- Sample Gallery Items - Enhanced for better look -->
-      <a href="{{ '/assets/images/gallery/gallery1.jpg' | relative_url }}" class="gallery-item" data-lightbox="home-gallery" data-title="Gallery Image 1">
-        <img src="{{ '/assets/images/gallery/gallery1.jpg' | relative_url }}" alt="Gallery Image 1">
+      <a href="{{ '/assets/images/gallery/gallery1.jpg' | relative_url }}" class="gallery-item" data-lightbox="home-gallery" data-i18n-title="home.sampleGallery.image1.title" data-title="Gallery Image 1">
+        <img src="{{ '/assets/images/gallery/gallery1.jpg' | relative_url }}" data-i18n-alt="home.sampleGallery.image1.title" alt="Gallery Image 1">
         <span class="gallery-item-overlay"><i class="fas fa-search-plus"></i></span>
       </a>
-      <a href="{{ '/assets/images/gallery/gallery2.jpg' | relative_url }}" class="gallery-item" data-lightbox="home-gallery" data-title="Gallery Image 2">
-        <img src="{{ '/assets/images/gallery/gallery2.jpg' | relative_url }}" alt="Gallery Image 2">
+      <a href="{{ '/assets/images/gallery/gallery2.jpg' | relative_url }}" class="gallery-item" data-lightbox="home-gallery" data-i18n-title="home.sampleGallery.image2.title" data-title="Gallery Image 2">
+        <img src="{{ '/assets/images/gallery/gallery2.jpg' | relative_url }}" data-i18n-alt="home.sampleGallery.image2.title" alt="Gallery Image 2">
         <span class="gallery-item-overlay"><i class="fas fa-search-plus"></i></span>
       </a>
-      <a href="{{ '/assets/images/gallery/gallery3.jpg' | relative_url }}" class="gallery-item" data-lightbox="home-gallery" data-title="Gallery Image 3">
-        <img src="{{ '/assets/images/gallery/gallery3.jpg' | relative_url }}" alt="Gallery Image 3">
+      <a href="{{ '/assets/images/gallery/gallery3.jpg' | relative_url }}" class="gallery-item" data-lightbox="home-gallery" data-i18n-title="home.sampleGallery.image3.title" data-title="Gallery Image 3">
+        <img src="{{ '/assets/images/gallery/gallery3.jpg' | relative_url }}" data-i18n-alt="home.sampleGallery.image3.title" alt="Gallery Image 3">
         <span class="gallery-item-overlay"><i class="fas fa-search-plus"></i></span>
       </a>
-      <a href="{{ '/assets/images/gallery/gallery4.jpg' | relative_url }}" class="gallery-item" data-lightbox="home-gallery" data-title="Gallery Image 4">
-        <img src="{{ '/assets/images/gallery/gallery4.jpg' | relative_url }}" alt="Gallery Image 4">
+      <a href="{{ '/assets/images/gallery/gallery4.jpg' | relative_url }}" class="gallery-item" data-lightbox="home-gallery" data-i18n-title="home.sampleGallery.image4.title" data-title="Gallery Image 4">
+        <img src="{{ '/assets/images/gallery/gallery4.jpg' | relative_url }}" data-i18n-alt="home.sampleGallery.image4.title" alt="Gallery Image 4">
         <span class="gallery-item-overlay"><i class="fas fa-search-plus"></i></span>
       </a>
-      <a href="{{ '/assets/images/gallery/gallery5.jpg' | relative_url }}" class="gallery-item" data-lightbox="home-gallery" data-title="Gallery Image 5">
-        <img src="{{ '/assets/images/gallery/gallery5.jpg' | relative_url }}" alt="Gallery Image 5">
+      <a href="{{ '/assets/images/gallery/gallery5.jpg' | relative_url }}" class="gallery-item" data-lightbox="home-gallery" data-i18n-title="home.sampleGallery.image5.title" data-title="Gallery Image 5">
+        <img src="{{ '/assets/images/gallery/gallery5.jpg' | relative_url }}" data-i18n-alt="home.sampleGallery.image5.title" alt="Gallery Image 5">
         <span class="gallery-item-overlay"><i class="fas fa-search-plus"></i></span>
       </a>
-      <a href="{{ '/assets/images/gallery/gallery6.jpg' | relative_url }}" class="gallery-item" data-lightbox="home-gallery" data-title="Gallery Image 6">
-        <img src="{{ '/assets/images/gallery/gallery6.jpg' | relative_url }}" alt="Gallery Image 6">
+      <a href="{{ '/assets/images/gallery/gallery6.jpg' | relative_url }}" class="gallery-item" data-lightbox="home-gallery" data-i18n-title="home.sampleGallery.image6.title" data-title="Gallery Image 6">
+        <img src="{{ '/assets/images/gallery/gallery6.jpg' | relative_url }}" data-i18n-alt="home.sampleGallery.image6.title" alt="Gallery Image 6">
         <span class="gallery-item-overlay"><i class="fas fa-search-plus"></i></span>
       </a>
-      <a href="{{ '/assets/images/gallery/gallery7.jpg' | relative_url }}" class="gallery-item" data-lightbox="home-gallery" data-title="Gallery Image 7">
-        <img src="{{ '/assets/images/gallery/gallery7.jpg' | relative_url }}" alt="Gallery Image 7">
+      <a href="{{ '/assets/images/gallery/gallery7.jpg' | relative_url }}" class="gallery-item" data-lightbox="home-gallery" data-i18n-title="home.sampleGallery.image7.title" data-title="Gallery Image 7">
+        <img src="{{ '/assets/images/gallery/gallery7.jpg' | relative_url }}" data-i18n-alt="home.sampleGallery.image7.title" alt="Gallery Image 7">
         <span class="gallery-item-overlay"><i class="fas fa-search-plus"></i></span>
       </a>
-      <a href="{{ '/assets/images/gallery/gallery8.jpg' | relative_url }}" class="gallery-item" data-lightbox="home-gallery" data-title="Gallery Image 8">
-        <img src="{{ '/assets/images/gallery/gallery8.jpg' | relative_url }}" alt="Gallery Image 8">
+      <a href="{{ '/assets/images/gallery/gallery8.jpg' | relative_url }}" class="gallery-item" data-lightbox="home-gallery" data-i18n-title="home.sampleGallery.image8.title" data-title="Gallery Image 8">
+        <img src="{{ '/assets/images/gallery/gallery8.jpg' | relative_url }}" data-i18n-alt="home.sampleGallery.image8.title" alt="Gallery Image 8">
         <span class="gallery-item-overlay"><i class="fas fa-search-plus"></i></span>
       </a>
     </div>
@@ -170,26 +170,3 @@ lang: en
   </div>
 
 </section>
-
-<!-- Include the mobile menu -->
-<div class="mobile-menu">
-  <nav>
-    <ul>
-      <li><a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}">
-        <span data-i18n="nav.home">Home</span>
-      </a></li>
-      <li><a href="{{ '/about' | relative_url }}" class="nav-link {% if page.url contains '/about' %}active{% endif %}">
-        <span data-i18n="nav.about">About</span>
-      </a></li>
-      <li><a href="{{ '/events' | relative_url }}" class="nav-link {% if page.url contains '/events' %}active{% endif %}">
-        <span data-i18n="nav.events">Events</span>
-      </a></li>
-      <li><a href="{{ '/gallery' | relative_url }}" class="nav-link {% if page.url contains '/gallery' %}active{% endif %}">
-        <span data-i18n="nav.gallery">Gallery</span>
-      </a></li>
-      <li><a href="{{ '/contact' | relative_url }}" class="nav-link {% if page.url contains '/contact' %}active{% endif %}">
-        <span data-i18n="nav.contact">Contact</span>
-      </a></li>
-    </ul>
-  </nav>
-</div>

@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const loadTranslations = async (lang) => {
     if (!translations[lang]) {
       try {
-        const response = await fetch(`/assets/js/i18n/${lang}.json`);
+        const response = await fetch(`${siteBaseUrl}/assets/js/i18n/${lang}.json`);
         translations[lang] = await response.json();
       } catch (error) {
         console.error(`Could not load translations for ${lang}:`, error);
